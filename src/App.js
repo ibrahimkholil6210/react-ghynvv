@@ -50,6 +50,7 @@ export default function App() {
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
       <div dangerouslySetInnerHTML={{ __html: detectBrowser() }} />
+      <div>{JSON.stringify(window.navigator.userAgent)}</div>
     </div>
   );
 }
